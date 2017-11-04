@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "es2016",
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    ["transform-class-properties", { "spec": true }]
+  ]
+}

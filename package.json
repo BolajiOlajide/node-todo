@@ -4,16 +4,28 @@
   "description": "Learning how to use sequelize with express!",
   "main": "app.js",
   "scripts": {
-    "prestart": "rimraf app-transpiled.js && babel app.js --out-file app-transpiled.js",
-    "start": "node app-transpiled.js"
+    "dev": "babel-watch bin/www.js",
+    "db:migrate": "sequelize db:migrate"
   },
   "author": "Bolaji Olajide",
   "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
     "http": "0.0.0",
+    "morgan": "^1.9.0",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
     "rimraf": "^2.6.2",
+    "sequelize": "^4.22.2",
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.20.0"
